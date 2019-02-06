@@ -25,7 +25,7 @@ SECRET_KEY = 'x4)%f4n9vs_l4$^9+gc6kd+va_b+z#fm3a3+xc!)1zgdpg7)b9'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['localhost', '127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -40,6 +40,7 @@ INSTALLED_APPS = [
 
     # Third party apps
     'bootstrap3',
+    'gunicorn',
 
     # My apps
     'learning_logs',
